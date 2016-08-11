@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "New FluentLenium page"
+date:   2016-08-11 10:00:27 +0200
+categories: jekyll update
+---
+
+We decided to use Jekyll project to generate FluentLenium page.
+Now we'll be sure that everyone can find information on GitHub and on the FluentLenium page as well.

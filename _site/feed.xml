@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FluentLenium</title>
+    <description>FluentLenium makes the writing of acceptance tests in a fluent way possible using the power of css selectors. Build upon Selenium WebDriver. It helps you to write tests incredibly fast and reduce maintanance effort.
+</description>
+    <link>http://http://fluentlenium.org//</link>
+    <atom:link href="http://http://fluentlenium.org//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 11 Aug 2016 10:38:22 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Aug 2016 10:38:22 +0200</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>New FluentLenium page</title>
+        <description>&lt;p&gt;We decided to use Jekyll project to generate FluentLenium page.
+Now we’ll be sure that everyone can find information on GitHub and on the FluentLenium page as well.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 11 Aug 2016 10:00:27 +0200</pubDate>
+        <link>http://http://fluentlenium.org//jekyll/update/2016/08/11/new-page.html</link>
+        <guid isPermaLink="true">http://http://fluentlenium.org//jekyll/update/2016/08/11/new-page.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
