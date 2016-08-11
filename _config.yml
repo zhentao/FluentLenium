@@ -10,8 +10,8 @@ title: FluentLenium
 description: > # this means to ignore newlines until "baseurl:"
   FluentLenium makes the writing of acceptance tests in a fluent way possible using the power of css selectors.
   Build upon Selenium WebDriver. It helps you to write tests incredibly fast and reduce maintanance effort.
-baseurl: ""
-url: "http://fluentlenium.github.io/FluentLenium/"
+baseurl: "/FluentLenium"
+url: "http://fluentlenium.github.io"
 github_username:  FluentLenium
 
 # Build settings
