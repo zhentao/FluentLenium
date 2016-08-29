@@ -64,7 +64,7 @@ public class DuckDuckGoTest extends FluentTest {
 
 [More FluentLenium examples are available on github](https://github.com/FluentLenium/FluentLenium/tree/master/fluentlenium-examples).
 
-## Fluent Test
+##Â Fluent Test
 
 Fluent Test is the entry point of FluentLenium. You only have to extend `FluentTest` and implement a test as usual.
 
@@ -210,7 +210,7 @@ $("#account").submit()
 $("#create-button").mouseOver()
 ```
 
-### Information
+###Â Information
 
 You can also retrieve information of selected elements:
 
@@ -1266,7 +1266,7 @@ Then use ```SNAPSHOT``` version when declaring the dependencies.
 
 - Extends FluentTest.
 
-### TestNG
+###Â TestNG
 
 - Import this maven dependency.
 
