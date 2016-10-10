@@ -1,8 +1,8 @@
 # What is FluentLenium ?
 
-[![Travis](https://img.shields.io/travis/FluentLenium/FluentLenium.svg)](https://travis-ci.org/FluentLenium/FluentLenium)
-[![Coveralls](https://img.shields.io/coveralls/FluentLenium/FluentLenium.svg)](https://coveralls.io/github/FluentLenium/FluentLenium)
-[![HuBoard](https://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/FluentLenium/FluentLenium)
+[![Travis](https://img.shields.io/travis/FluentLenium/FluentLenium/support/0.x.svg)](https://travis-ci.org/FluentLenium/FluentLenium)
+[![Coveralls](https://img.shields.io/coveralls/FluentLenium/FluentLenium.svg?branch=support/0.x)](https://coveralls.io/github/FluentLenium/FluentLenium)
+[![Website](https://img.shields.io/website-up-down-green-red/http/fluentlenium.org.svg)](http://fluentlenium.org)
 
 FluentLenium is a framework that helps you to write [Selenium](http://seleniumhq.org/) tests.
 FluentLenium provides you a [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface) to the [Selenium Web Driver](http://seleniumhq.org/docs/03_webdriver.html).
