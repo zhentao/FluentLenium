@@ -32,9 +32,28 @@ public class WaitSizeTest extends IntegrationFluentTest {
     }
 
     @Test
-    public void waitForListChangeFromPageObject() {
+    public void waitForListChangeFromPageObjectUsingFluentListAnnotationWithReset() {
         goTo(sizeChangePage);
-        await().until(sizeChangePage.getRows()).size().greaterThan(2);
+        System.out.println(sizeChangePage.getRowsByAnnotation().size());
+        sizeChangePage.getRowsByAnnotation().reset();
+        await().until(sizeChangePage.getRowsByAnnotation()).size().greaterThan(2);
+        assertThat(sizeChangePage.getRowsByAnnotation()).size().isEqualTo(2);
+    }
+
+    @Test
+    public void waitForListChangeFromPageObjectUsingFluentListAnnotation() {
+        goTo(sizeChangePage);
+        System.out.println(sizeChangePage.getRowsByAnnotation().size());
+        await().until(sizeChangePage.getRowsByAnnotation()).size().greaterThan(2);
+        System.out.println(sizeChangePage.getRowsByAnnotation().size());
+    }
+
+    @Test
+    public void waitForListChangeFromPageObjectUsingList() {
+        goTo(sizeChangePage);
+        System.out.println(sizeChangePage.getRowsBySelector().size());
+        await().until(sizeChangePage.getRowsBySelector()).size().greaterThan(2);
+        System.out.println(sizeChangePage.getRowsBySelector().size());
     }
 
     @Test(expected = TimeoutException.class)
@@ -73,7 +92,10 @@ class SizeChangePage extends FluentPage {
         assertThat(getDriver().getTitle()).isEqualTo("size change page");
     }
 
-    public FluentList<FluentWebElement> getRows() {
+    public FluentList<FluentWebElement> getRowsByAnnotation() {
         return rows;
+    }
+    public FluentList<FluentWebElement> getRowsBySelector() {
+        return $(".row");
     }
 }
