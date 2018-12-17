@@ -160,4 +160,8 @@ public class FluentPage extends DefaultFluentContainer implements FluentPageCont
 
         return parse;
     }
+
+    public <P extends FluentPage> P reset() {
+        return (P) newInstance(this.getClass());
+    }
 }
