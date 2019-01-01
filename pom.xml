@@ -101,6 +101,17 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <id>Slawek</id>
+            <name>Slawomir Radzyminski</name>
+            <email>slawomir.radzyminski@gmail.com</email>
+            <url>https://github.com/slawekradzyminski</url>
+            <organization>Ocado Technology</organization>
+            <organizationUrl>http://www.ocadotechnology.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
 
     <properties>
@@ -139,6 +150,11 @@
             </dependency>
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-firefox-driver</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>htmlunit-driver</artifactId>
                 <version>2.33.3</version>
             </dependency>
@@ -146,11 +162,6 @@
                 <groupId>xml-apis</groupId>
                 <artifactId>xml-apis</artifactId>
                 <version>2.0.2</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seleniumhq.selenium</groupId>
-                <artifactId>selenium-firefox-driver</artifactId>
-                <version>${selenium.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -201,6 +212,11 @@
                 <groupId>org.spockframework</groupId>
                 <artifactId>spock-core</artifactId>
                 <version>1.1-groovy-2.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -395,6 +411,9 @@
                 <module>examples/quickstart-chrome</module>
                 <module>examples/spock</module>
                 <module>examples/spring</module>
+                <module>examples/quickstart-safari</module>
+                <module>examples/quickstart-firefox</module>
+                <module>examples/quickstart-microsoft-browsers</module>
             </modules>
         </profile>
 

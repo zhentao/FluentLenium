@@ -10,6 +10,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import org.fluentlenium.adapter.SharedMutator.EffectiveParameters;
+import org.fluentlenium.adapter.sharedwebdriver.SharedWebDriver;
+import org.fluentlenium.adapter.sharedwebdriver.SharedWebDriverContainer;
 import org.openqa.selenium.WebDriverException;
 
 /**
@@ -129,8 +131,6 @@ public class FluentTestRunnerAdapter extends FluentAdapter {
             throw new WebDriverException("Browser failed to start, test [ " + testName + " ] execution interrupted."
                     + (isEmpty(causeMessage) ? "" : "\nCaused by: [ " + causeMessage + "]"), e);
         }
-
-
 
         initFluent(sharedWebDriver.getDriver());
     }
@@ -305,7 +305,7 @@ public class FluentTestRunnerAdapter extends FluentAdapter {
      * @param testName  Test name
      */
     protected void failed(Throwable e, Class<?> testClass, String testName) {
-        if (isFluentControlAvailable()) {
+        if (isFluentControlAvailable() && !isIgnoredException(e)) {
             try {
                 if (getScreenshotMode() == TriggerMode.AUTOMATIC_ON_FAIL && canTakeScreenShot()) {
                     this.takeScreenshot(testClass.getSimpleName() + "_" + testName + ".png");
