@@ -15,7 +15,7 @@ jobs:
         - mvn -Pframework-integration-tests clean test
 
     - stage: test
-      name: "Java - unit & integration tests code coverage + snapshot upload"
+      name: "Java - unit & integration tests code coverage + snapshot upload "
       language: java
       jdk: oraclejdk11
       script:
